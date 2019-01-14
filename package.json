@@ -1,0 +1,14 @@
+{
+  "name": "techsolutions",
+  "version": "1.0.0",
+  "description": "Tech Solutions Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "ZPPD",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

@@ -9,21 +9,22 @@ body {
   font-family: "Lato";
   line-height: 1.5; }
 
-.nav {
+.navbar {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 2;
   background: #444;
   padding: 1rem 1.5rem;
   display: flex;
   flex-direction: row; }
-  .nav .brand {
+  .navbar .brand {
     text-decoration: none;
     color: #efefef;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 1px; }
-    .nav .brand span {
+    .navbar .brand span {
       color: #3b7d8e; }
 
 .menu {
@@ -52,9 +53,27 @@ body {
       background-color: #d5b710; }
 
 .hero {
-  height: 100%;
-  width: 100%;
-  background: url("../img/header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  margin-top: 6rem;
+  min-height: 70vh; }
+  .hero#hero {
+    position: relative;
+    background: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2; }
+    .hero#hero:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.5); }
+  .hero .hero-text {
+    color: #efefef;
+    font-size: 4rem;
+    font-weight: 400;
+    padding-top: 20vh;
+    text-align: center; }

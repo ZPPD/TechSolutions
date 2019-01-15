@@ -1,22 +1,4 @@
-// Colors
-$priary-color: #eee;
-$dark-color: #444;
-$light-text-color: #efefef;
-$brand-color: #3b7d8e;
-$button-color: #eece1a;
-
-@mixin ease {
-  transition: all 0.1s ease;
-}
-
-// @mixin hero-background{
-//   @if $show-hero-image {
-//     &.hero-image{
-//       background: $
-//     }
-//   }
-// }
-
+@import "config";
 * {
   box-sizing: border-box;
 }
@@ -29,8 +11,9 @@ body {
   line-height: 1.5;
 }
 
-.nav {
+.navbar {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 2;
   background: $dark-color;
@@ -88,10 +71,15 @@ body {
 }
 
 .hero {
-  height: 100%;
-  width: 100%;
-  background: url("../img/header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include hero-background;
+  margin-top: 6rem;
+  min-height: 70vh;
+
+  .hero-text {
+    color: $light-text-color;
+    font-size: 4rem;
+    font-weight: 400;
+    padding-top: 20vh;
+    text-align: center;
+  }
 }

@@ -1,0 +1,36 @@
+// Variables
+$priary-color: #eee;
+$dark-color: #444;
+$light-text-color: #efefef;
+$brand-color: #3b7d8e;
+$button-color: #eece1a;
+$show-hero-image: true;
+
+// mixins
+@mixin ease {
+  transition: all 0.1s ease;
+}
+
+@mixin hero-background {
+  @if $show-hero-image {
+    &#hero {
+      position: relative;
+      background: url("../img/header.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 2;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($dark-color, 0.5);
+      }
+    }
+  }
+}

@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #eee;
-  color: #444;
-  height: 100%;
-  margin: 0;
-  font-family: "Lato";
-  line-height: 1.5; }
-
 .navbar {
   position: fixed;
   top: 0;
@@ -53,6 +42,40 @@ body {
     cursor: pointer; }
     .menu .login-btn:hover {
       background-color: #d5b710; }
+
+footer {
+  background: #444;
+  color: #efefef;
+  padding: 3rem;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  footer a {
+    text-decoration: none;
+    color: #eece1a; }
+  footer .contact {
+    text-align: center; }
+    footer .contact h3 span {
+      color: #3b7d8e; }
+    footer .contact .social i {
+      margin: 0.3rem;
+      color: #3b7d8e; }
+
+.footer-section {
+  text-align: center; }
+  .footer-section li {
+    list-style: none; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #eee;
+  color: #444;
+  height: 100%;
+  margin: 0;
+  font-family: "Lato";
+  line-height: 1.5; }
 
 .hero {
   margin-top: 6rem;
@@ -109,15 +132,41 @@ hr {
 .image-grid {
   display: grid;
   grid-template-areas: "team work" "buildings buildings";
-  grid-gap: 0.2rem; }
+  grid-gap: 0.2rem;
+  margin-top: 4rem; }
   .image-grid .block-img1 {
     grid-area: "team";
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .image-grid .block-img2 {
     grid-area: "work";
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
   .image-grid .block-img3 {
     grid-column: 1 / 3;
     grid-area: "buildings";
     width: 100%;
-    height: 50%; }
+    height: 70vh; }
+
+.home-image {
+  position: relative; }
+  .home-image img:hover {
+    opacity: 0.8; }
+  .home-image:hover .wrap {
+    opacity: 1; }
+
+.wrap {
+  background: rgba(103, 89, 8, 0.6);
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.4s ease-in-out; }
+  .wrap p {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-top: 10vh;
+    color: #fff; }

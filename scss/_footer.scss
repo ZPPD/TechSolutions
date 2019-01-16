@@ -1,0 +1,34 @@
+footer {
+  background: $dark-color;
+  color: $light-text-color;
+  padding: 3rem;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: $button-color;
+  }
+
+  .contact {
+    text-align: center;
+
+    h3 span {
+      color: $brand-color;
+    }
+
+    .social i {
+      margin: 0.3rem;
+      color: $brand-color;
+    }
+  }
+}
+
+.footer-section {
+  text-align: center;
+
+  li {
+    list-style: none;
+  }
+}

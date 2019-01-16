@@ -11,6 +11,10 @@ $show-hero-image: true;
   transition: all 0.1s ease;
 }
 
+@mixin ease-in-out {
+  transition: all 0.4s ease-in-out;
+}
+
 @mixin hero-background {
   @if $show-hero-image {
     &#hero {

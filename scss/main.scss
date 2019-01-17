@@ -1,6 +1,9 @@
 @import "config";
 @import "navbar";
 @import "footer";
+@import "services";
+// @import "solutions";
+// @import "contact";
 
 * {
   box-sizing: border-box;
@@ -14,6 +17,7 @@ body {
   line-height: 1.5;
 }
 
+h1,
 h2 {
   font-size: 2rem;
   font-weight: 500;
@@ -23,18 +27,38 @@ h2 {
   color: darken($dark-color, 10);
 }
 
+#hero {
+  background: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// @include hero-background;
 .hero {
-  @include hero-background;
   margin-top: 6rem;
   min-height: 70vh;
+  position: relative;
 
-  .hero-text {
-    color: $light-text-color;
-    font-size: 4rem;
-    font-weight: 400;
-    padding-top: 20vh;
-    text-align: center;
+  z-index: 2;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(darken($brand-color, 10), 0.5);
   }
+}
+
+.hero-text {
+  color: $light-text-color;
+  font-size: 4rem;
+  font-weight: 400;
+  padding-top: 20vh;
+  text-align: center;
 }
 
 .logo {
@@ -52,7 +76,7 @@ h2 {
 
 hr {
   background-color: lighten($dark-color, 5);
-  width: 90vw;
+  width: 90%;
   margin-top: 2rem;
 }
 

@@ -2,7 +2,7 @@
 @import "navbar";
 @import "footer";
 @import "services";
-// @import "solutions";
+@import "solutions";
 // @import "contact";
 
 * {
@@ -27,6 +27,10 @@ h2 {
   color: darken($dark-color, 10);
 }
 
+i {
+  font-size: 4rem;
+}
+
 #hero {
   background: url("../img/header.jpg");
   background-size: cover;
@@ -49,7 +53,7 @@ h2 {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(darken($brand-color, 10), 0.5);
+    background: rgba(darken($dark-color, 10), 0.5);
   }
 }
 

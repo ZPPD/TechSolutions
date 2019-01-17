@@ -1,0 +1,77 @@
+#hero-solutions {
+  background: url("../img/solutions.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.special {
+  opacity: 0.4;
+  text-align: center;
+  margin: 4rem 0;
+  position: relative;
+
+  &:before,
+  &:after {
+    border-bottom: solid 1.5px;
+    border-top: solid 1.5px;
+    content: "";
+    height: 7px;
+    position: absolute;
+    top: 1.75rem;
+    width: 43%;
+  }
+
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+
+  i {
+    font-size: 4rem;
+  }
+}
+
+.solution-heading {
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+  }
+}
+
+.box {
+  background: darken($brand-color, 20);
+  color: $light-text-color;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  margin: 4rem 0;
+  text-align: center;
+
+  h2 {
+    color: $light-text-color;
+  }
+
+  .box-right i {
+    display: block;
+    color: darken($button-color, 10);
+    padding: 0.5rem;
+  }
+}
+
+.solutions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+
+  .card {
+    margin: 2rem 0 4rem 0;
+    img {
+      width: 75%;
+      height: 50vh;
+    }
+  }
+}

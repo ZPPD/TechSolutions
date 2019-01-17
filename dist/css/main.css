@@ -90,8 +90,7 @@ footer {
 
 .grid-services {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.2rem; }
+  grid-template-columns: repeat(2, 1fr); }
   .grid-services .services-text {
     padding: 3rem;
     text-align: center; }
@@ -102,6 +101,8 @@ footer {
     height: 100%; }
   .grid-services .btn {
     margin-top: 2rem; }
+    .grid-services .btn i {
+      font-size: 1rem; }
   .grid-services .on-call-text {
     grid-column: 2;
     grid-row: 1; }
@@ -121,6 +122,62 @@ footer {
     padding-right: 0.6rem;
     color: #3b7d8e;
     cursor: pointer; }
+
+#hero-solutions {
+  background: url("../img/solutions.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.special {
+  opacity: 0.4;
+  text-align: center;
+  margin: 4rem 0;
+  position: relative; }
+  .special:before, .special:after {
+    border-bottom: solid 1.5px;
+    border-top: solid 1.5px;
+    content: "";
+    height: 7px;
+    position: absolute;
+    top: 1.75rem;
+    width: 43%; }
+  .special:before {
+    left: 0; }
+  .special:after {
+    right: 0; }
+  .special i {
+    font-size: 4rem; }
+
+.solution-heading {
+  text-align: center; }
+  .solution-heading h1 {
+    text-transform: uppercase; }
+
+.box {
+  background: #1d3e46;
+  color: #efefef;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  margin: 4rem 0;
+  text-align: center; }
+  .box h2 {
+    color: #efefef; }
+  .box .box-right i {
+    display: block;
+    color: #c6ab0f;
+    padding: 0.5rem; }
+
+.solutions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center; }
+  .solutions .card {
+    margin: 2rem 0 4rem 0; }
+    .solutions .card img {
+      width: 75%;
+      height: 50vh; }
 
 * {
   box-sizing: border-box; }
@@ -142,6 +199,9 @@ h2 {
   margin-top: 3rem;
   color: #2b2b2b; }
 
+i {
+  font-size: 4rem; }
+
 #hero {
   background: url("../img/header.jpg");
   background-size: cover;
@@ -161,7 +221,7 @@ h2 {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: rgba(44, 93, 106, 0.5); }
+    background: rgba(43, 43, 43, 0.5); }
 
 .hero-text {
   color: #efefef;

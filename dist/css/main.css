@@ -27,13 +27,23 @@
     margin: 0 1rem;
     font-size: 1.2rem;
     font-weight: 500; }
-  .menu a {
+  .menu .menu-item {
     text-decoration: none;
     color: #444; }
-    .menu a:hover {
+    .menu .menu-item:hover {
       color: #515151;
       border-bottom: 3px solid #444;
       transition: all 0.1s ease; }
+  .menu .active-menu {
+    background: #3b7d8e;
+    padding: 0.4rem;
+    border-radius: 3px; }
+    .menu .active-menu:hover {
+      background: #2c5d6a;
+      transition: all 0.4s ease-in-out; }
+    .menu .active-menu a {
+      text-decoration: none;
+      color: #efefef; }
   .menu .login-btn {
     background-color: #eece1a;
     border: none;
@@ -41,7 +51,8 @@
     padding: 0.5rem;
     cursor: pointer; }
     .menu .login-btn:hover {
-      background-color: #d5b710; }
+      background-color: #d5b710;
+      transition: all 0.4s ease-in-out; }
 
 footer {
   clear: both;
@@ -151,7 +162,7 @@ hr {
     grid-column: 1 / 3;
     grid-area: "buildings";
     width: 100%;
-    height: 70vh; }
+    height: 50vh; }
 
 .home-image {
   position: relative; }

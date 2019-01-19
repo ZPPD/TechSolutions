@@ -186,10 +186,10 @@ footer {
   background-size: cover; }
 
 .news-sites {
-  margin: 3rem auto;
-  text-align: center;
-  margin-bottom: 2rem; }
-  .news-sites button {
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center; }
+  .news-sites .btns {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 0.9;
@@ -202,13 +202,17 @@ footer {
     height: 35px;
     padding: 5px;
     cursor: pointer; }
-    .news-sites button:focus {
-      border-bottom: 5px solid #eece1a;
-      padding-bottom: 3px; }
+  .news-sites .active {
+    background-color: #316775;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #eece1a; }
 
 #newsBox {
+  margin-top: 0;
   background-color: #316775;
-  color: #efefef; }
+  color: #efefef;
+  min-height: 100vh; }
   #newsBox h2 {
     line-height: 1.3;
     letter-spacing: 1.2px;
@@ -217,14 +221,14 @@ footer {
   #newsBox h3 {
     padding: 0 1rem; }
   #newsBox .story-image {
-    width: 60%;
+    width: 100%;
     height: auto; }
   #newsBox .articlerow {
-    padding: 10px;
+    padding: 1rem 0.4rem;
     min-height: 250px;
     border-bottom: 1px solid #eece1a; }
   #newsBox .article {
-    width: 80%;
+    width: 70%;
     margin: auto; }
 
 * {

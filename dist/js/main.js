@@ -3,6 +3,7 @@ const engadget = document.getElementById("engadget");
 const recode = document.getElementById("recode");
 const nextWeb = document.getElementById("nextWeb");
 const newsBox = document.getElementById("newsBox");
+const btns = document.querySelectorAll(".btns");
 
 // News API Data
 //get the urls from the newsapi.org news sources
@@ -13,6 +14,14 @@ const recodeUrl =
   "https://newsapi.org/v2/top-headlines?sources=recode&apiKey=2860a50f97ec48408dfdd55d159a9e2c";
 const nextWebUrl =
   "https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=2860a50f97ec48408dfdd55d159a9e2c";
+
+// Buttons class Active
+btns.forEach(btn =>
+  btn.addEventListener("click", function(e) {
+    btns.forEach(btn => btn.classList.remove("active"));
+    e.target.classList.add("active");
+  })
+);
 
 // Button Event Listeners
 engadget.addEventListener(
@@ -48,8 +57,8 @@ async function getNews(url) {
   let response = await fetch(url);
   let jsonResponse = await response.json();
   console.log(jsonResponse);
-  //saving the first 5 articles from the array
-  let articlesArray = jsonResponse.articles.slice(0, 5);
+  //saving the first 7 articles from the array
+  let articlesArray = jsonResponse.articles.slice(0, 7);
   console.log(articlesArray);
   return articlesArray;
 }

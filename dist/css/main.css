@@ -179,6 +179,12 @@ footer {
       width: 75%;
       height: 50vh; }
 
+#hero-news {
+  background: url("../img/news.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 * {
   box-sizing: border-box; }
 

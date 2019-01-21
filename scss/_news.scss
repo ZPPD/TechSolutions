@@ -63,12 +63,12 @@
       h3 {
         padding: 0 1rem;
       }
-      .btn {
-        margin: 1rem auto;
-        a {
-          color: $dark-color;
-          text-decoration: none;
 
+      a {
+        color: $dark-color;
+        text-decoration: none;
+        .btn {
+          margin: 1rem auto;
           i {
             font-size: 1rem;
           }

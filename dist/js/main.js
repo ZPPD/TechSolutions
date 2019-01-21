@@ -74,9 +74,9 @@ function renderNews(articles) {
       article.author
     }</h3>
           <p class='paragraph'>${article.content}</p>
-          <button class='btn' type='button'><a href="${
+          <a href="${
             article.url
-          }" target="_blank">Read More <i class="fas fa-arrow-right"></i></a></button>
+          }" target="_blank"><button class='btn' type='button'>Read More <i class="fas fa-arrow-right"></i></button></a>
           <img class="story-image" src="${article.urlToImage}" alt="${
       article.description
     }">

@@ -229,12 +229,12 @@ footer {
       #newsBox .articlerow .article p,
       #newsBox .articlerow .article h3 {
         padding: 0 1rem; }
-      #newsBox .articlerow .article .btn {
-        margin: 1rem auto; }
-        #newsBox .articlerow .article .btn a {
-          color: #444;
-          text-decoration: none; }
-          #newsBox .articlerow .article .btn a i {
+      #newsBox .articlerow .article a {
+        color: #444;
+        text-decoration: none; }
+        #newsBox .articlerow .article a .btn {
+          margin: 1rem auto; }
+          #newsBox .articlerow .article a .btn i {
             font-size: 1rem; }
       #newsBox .articlerow .article .story-image {
         width: 100%;

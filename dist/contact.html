@@ -22,23 +22,73 @@
       </ul>
     </nav>
     <section id='hero-contact' class='hero'>
-      <h1 class='hero-text'>Technology You Can Trust </h1>
+      <h1 class='hero-text'>We look forward to hearing from you </h1>
     </section>
   </header>
 
       <main class='container'>
-        <section>
-          
+        <section class='special'>
+          <i class="fas fa-envelope"></i>
         </section>
-      
-        <section class=''>
-          
-        </section>
+        <div class="contact-grid">
+          <section class='contact-info'>
+            <div>
+              <h3><span><i class="fas fa-map-marker-alt"></i></span> 51 Main St. <br> Cary, NC 27513</h3>
+            </div>
+            <div>
+              <h3><span><i class="fas fa-phone"></i></span> Phone: (555) 555-5555</h3>
+            </div>
+            <div>
+              <h3><span><i class="fas fa-print"></i></span> Fax: (555) 444-4444</h3>
+            </div>
+          </section>
+        
+          <section class='contact-form'>
+            <form>
+              <label for="firstName">
+                First Name <span class='required'>*</span>
+              </label> <br>
+              <input id='firstName' name='firstName' type="text" required><br>
 
-        <section class=''>
+              <label for="lastName">
+                Last Name <span class='required'>*</span>
+              </label><br>
+              <input id='lastName' name='lastName' type="text" required><br>
 
-          
-        </section>
+              <label for="email">
+                Email <span class='required'>*</span>
+              </label><br>
+              <input id='email' name='email' type="email" required><br>
+
+              <label for="phone">
+                Phone
+              </label><br>
+              <input id='phone' name='phone' type="text"><br>
+
+              <label for="company">
+                Company 
+              </label><br>
+              <input id='company' name='company' type="text"><br>
+
+              <label for="subject">
+                Subject <span class='required'>*</span>
+              </label><br>
+              <input id='subject' name='subject' type="text" required><br>
+
+              <label for="message">
+                Message <span class='required'>*</span>
+              </label>  <br>              
+              <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+
+              <div class='check-box'>
+                <input id='checkbox' type="checkbox" required>
+                <label for="checkbox">I accept Tech Solutions Privacy Polices</label><br>
+                <button class='btn'>View</button>
+              </div>
+              <button class='btn'>Submit</button>
+            </form>  
+          </section>
+        </div>
       </main>
 
       <footer>

@@ -1,0 +1,52 @@
+#hero-contact {
+  background-image: url("../img/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-info {
+  i {
+    color: $brand-color;
+    font-size: 1rem;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .contact-form {
+    background-color: darken($primary-color, 3);
+    padding: 1.2rem;
+
+    .required {
+      color: #d70d2f;
+    }
+    form input,
+    form textarea {
+      display: block;
+      width: 100%;
+      padding: 0.4rem 0.8rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      background-color: $primary-color;
+      border-radius: 5px;
+      border: 1px solid darken($primary-color, 10);
+
+      &:focus {
+        @include ease-in-out;
+        border-color: $brand-color;
+        box-shadow: 0 0 0.5rem $brand-color;
+      }
+    }
+    .check-box {
+      display: block;
+      width: 80%;
+      margin: 1rem;
+      padding: 1rem;
+      background-color: darken($primary-color, 7);
+      text-align: center;
+    }
+  }
+}

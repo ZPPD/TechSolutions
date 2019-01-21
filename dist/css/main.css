@@ -164,10 +164,14 @@ footer {
   text-align: center; }
   .box h2 {
     color: #efefef; }
-  .box .box-right i {
-    display: block;
-    color: #c6ab0f;
-    padding: 0.5rem; }
+  .box .box-right {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .box .box-right i {
+      display: block;
+      color: #c6ab0f;
+      padding: 0.5rem; }
 
 .solutions {
   display: grid;
@@ -239,6 +243,47 @@ footer {
       #newsBox .articlerow .article .story-image {
         width: 100%;
         height: auto; }
+
+#hero-contact {
+  background-image: url("../img/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.contact-info i {
+  color: #3b7d8e;
+  font-size: 1rem; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .contact-grid .contact-form {
+    background-color: #e6e6e6;
+    padding: 1.2rem; }
+    .contact-grid .contact-form .required {
+      color: #d70d2f; }
+    .contact-grid .contact-form form input,
+    .contact-grid .contact-form form textarea {
+      display: block;
+      width: 100%;
+      padding: 0.4rem 0.8rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      background-color: #eee;
+      border-radius: 5px;
+      border: 1px solid #d5d5d5; }
+      .contact-grid .contact-form form input:focus,
+      .contact-grid .contact-form form textarea:focus {
+        transition: all 0.4s ease-in-out;
+        border-color: #3b7d8e;
+        box-shadow: 0 0 0.5rem #3b7d8e; }
+    .contact-grid .contact-form .check-box {
+      display: block;
+      width: 80%;
+      margin: 1rem;
+      padding: 1rem;
+      background-color: gainsboro;
+      text-align: center; }
 
 * {
   box-sizing: border-box; }

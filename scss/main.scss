@@ -4,13 +4,13 @@
 @import "services";
 @import "solutions";
 @import "news";
-// @import "contact";
+@import "contact";
 
 * {
   box-sizing: border-box;
 }
 body {
-  background: $priary-color;
+  background: $primary-color;
   color: $dark-color;
   height: 100%;
   margin: 0;

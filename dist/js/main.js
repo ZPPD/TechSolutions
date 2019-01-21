@@ -74,9 +74,9 @@ function renderNews(articles) {
       article.author
     }</h3>
           <p class='paragraph'>${article.content}</p>
-          <a href="${
+          <button class='btn' type='button'><a href="${
             article.url
-          }" target="_blank" class="readmore"><p>Read More</p></a>
+          }" target="_blank">Read More <i class="fas fa-arrow-right"></i></a></button>
           <img class="story-image" src="${article.urlToImage}" alt="${
       article.description
     }">
@@ -87,3 +87,8 @@ function renderNews(articles) {
   });
   return articles;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  newsBox.innerHTML = " ";
+  getNews(engadgetUrl).then(articleArray => renderNews(articleArray));
+});

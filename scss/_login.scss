@@ -1,0 +1,61 @@
+.login-page {
+  // margin-top: 10rem;
+  min-height: 90vh;
+}
+
+.login-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 99vh;
+}
+
+.login-left {
+  div {
+    margin: 30% auto;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  span {
+    color: $brand-color;
+  }
+
+  i {
+    font-size: 1.1rem;
+  }
+}
+
+.login-right {
+  background-color: darken($primary-color, 3);
+  //
+
+  div {
+    width: 70%;
+    margin: 30% auto;
+  }
+
+  .login-form #username,
+  #password {
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: $primary-color;
+    border-radius: 5px;
+    border: 1px solid darken($primary-color, 10);
+
+    &:focus {
+      @include ease-in-out();
+      border-color: $brand-color;
+      box-shadow: 0 0 0.5rem $brand-color;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $brand-color;
+  }
+}

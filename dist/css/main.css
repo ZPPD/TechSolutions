@@ -333,6 +333,51 @@ footer {
           text-decoration: none;
           color: #5e5e5e; }
 
+.login-page {
+  min-height: 90vh; }
+
+.login-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 99vh; }
+
+.login-left div {
+  margin: 30% auto; }
+
+.login-left p {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px; }
+
+.login-left span {
+  color: #3b7d8e; }
+
+.login-left i {
+  font-size: 1.1rem; }
+
+.login-right {
+  background-color: #e6e6e6; }
+  .login-right div {
+    width: 70%;
+    margin: 30% auto; }
+  .login-right .login-form #username,
+  .login-right #password {
+    width: 100%;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #d5d5d5; }
+    .login-right .login-form #username:focus,
+    .login-right #password:focus {
+      transition: all 0.4s ease-in-out;
+      border-color: #3b7d8e;
+      box-shadow: 0 0 0.5rem #3b7d8e; }
+  .login-right a {
+    text-decoration: none;
+    color: #3b7d8e; }
+
 * {
   box-sizing: border-box; }
 

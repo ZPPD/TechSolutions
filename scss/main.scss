@@ -5,6 +5,7 @@
 @import "solutions";
 @import "news";
 @import "contact";
+@import "login";
 
 * {
   box-sizing: border-box;
@@ -43,7 +44,6 @@ i {
   margin-top: 6rem;
   min-height: 70vh;
   position: relative;
-
   z-index: 2;
 
   &:after {

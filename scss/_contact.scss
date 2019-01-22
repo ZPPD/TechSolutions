@@ -6,6 +6,7 @@
 }
 
 .contact-info {
+  text-align: center;
   i {
     color: $brand-color;
     font-size: 1rem;
@@ -19,6 +20,7 @@
   .contact-form {
     background-color: darken($primary-color, 3);
     padding: 1.2rem;
+    margin: 1rem;
 
     .required {
       color: #d70d2f;
@@ -35,7 +37,7 @@
       border: 1px solid darken($primary-color, 10);
 
       &:focus {
-        @include ease-in-out;
+        @include ease-in-out();
         border-color: $brand-color;
         box-shadow: 0 0 0.5rem $brand-color;
       }
@@ -47,6 +49,59 @@
       padding: 1rem;
       background-color: darken($primary-color, 7);
       text-align: center;
+    }
+
+    .alert {
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 1rem;
+      text-align: center;
+    }
+    .alert-wrong {
+      background-color: #ed9a9d;
+      border: 1px solid #af2b2f;
+    }
+
+    .alert-sent {
+      background-color: #70eea5;
+      border: 1px solid #558581;
+    }
+
+    .modal {
+      display: none;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.6;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(darken($dark-color, 10), 0.5);
+      animation-name: modalopen;
+      animation-duration: 1.2s;
+    }
+
+    .modal-content {
+      background-color: $light-text-color;
+      margin: 15% auto;
+      padding: 1.5rem;
+      width: 70%;
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+        0 7px 20px 0 rgba(0, 0, 0, 0.17);
+
+      .closeBtn {
+        float: right;
+        font-size: 30px;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          text-decoration: none;
+          color: lighten($dark-color, 10);
+        }
+      }
     }
   }
 }

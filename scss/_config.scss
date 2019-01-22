@@ -1,3 +1,6 @@
+// font families
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans");
+
 // Variables
 $primary-color: #eee;
 $dark-color: #444;
@@ -15,26 +18,11 @@ $show-hero-image: true;
   transition: all 0.4s ease-in-out;
 }
 
-// @mixin hero-background {
-//   @if $show-hero-image {
-//     &.hero {
-//       position: relative;
-//       background: url("../img/header.jpg");
-//       background-size: cover;
-//       background-position: center;
-//       background-repeat: no-repeat;
-//       z-index: 2;
-
-//       &:after {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: -1;
-//         background: rgba(darken($brand-color, 10), 0.5);
-//       }
-//     }
-//   }
-// }
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

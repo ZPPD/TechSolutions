@@ -1,3 +1,7 @@
+/*============
+  News Page API
+==============*/
+
 // page elements
 const engadget = document.getElementById("engadget");
 const recode = document.getElementById("recode");

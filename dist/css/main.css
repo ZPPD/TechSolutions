@@ -59,8 +59,47 @@
   padding: 0.5rem;
   cursor: pointer; }
   .btn:hover {
-    background-color: #d5b710;
+    background-color: #c6ab0f;
     transition: all 0.4s ease-in-out; }
+
+.dashboard-nav {
+  top: 0;
+  width: 100%;
+  background: #2c5d6a;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  color: #efefef; }
+  .dashboard-nav .brand {
+    font-size: 1.3rem;
+    letter-spacing: 1px; }
+    .dashboard-nav .brand span {
+      color: #c6ab0f; }
+  .dashboard-nav li {
+    list-style: none;
+    margin-right: 1rem; }
+  .dashboard-nav a {
+    text-decoration: none;
+    color: #efefef; }
+
+.dashboard-menu {
+  display: flex;
+  flex-direction: row wrap;
+  font-size: 1.1rem;
+  margin: 0 auto; }
+
+.menu-right {
+  margin: 0 0 0 auto; }
+
+.dashboard-header {
+  background-color: #444; }
+  .dashboard-header h1 {
+    color: #efefef;
+    margin-top: 0;
+    padding: 1rem;
+    text-align: left; }
+  .dashboard-header i {
+    font-size: 2rem; }
 
 footer {
   clear: both;

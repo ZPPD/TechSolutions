@@ -19,6 +19,11 @@
     letter-spacing: 1px;
   }
 
+  h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
   span {
     color: $brand-color;
   }
@@ -29,11 +34,11 @@
 }
 
 .login-right {
-  background-color: darken($primary-color, 3);
+  background-color: darken($primary-color, 2);
   //
 
   div {
-    width: 70%;
+    width: 60%;
     margin: 30% auto;
   }
 

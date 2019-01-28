@@ -63,36 +63,39 @@
     transition: all 0.4s ease-in-out; }
 
 .dashboard-nav {
+  left: 0;
   top: 0;
-  width: 100%;
+  width: 15%;
+  height: 100vh;
+  position: fixed;
   background: #2c5d6a;
-  padding: 0 1.5rem;
-  display: flex;
-  flex-direction: row;
-  color: #efefef; }
+  padding: 3rem 1.5rem;
+  color: #efefef;
+  letter-spacing: 0.5px;
+  line-height: 1.5; }
   .dashboard-nav .brand {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 1px; }
     .dashboard-nav .brand span {
       color: #c6ab0f; }
   .dashboard-nav li {
     list-style: none;
-    margin-right: 1rem; }
+    padding: 1rem; }
   .dashboard-nav a {
     text-decoration: none;
     color: #efefef; }
+    .dashboard-nav a:hover {
+      color: #c6ab0f; }
 
-.dashboard-menu {
-  display: flex;
-  flex-direction: row wrap;
-  font-size: 1.1rem;
-  margin: 0 auto; }
-
+.dashboard-menu,
 .menu-right {
-  margin: 0 0 0 auto; }
+  font-size: 1.1rem;
+  padding: 0;
+  margin-top: 2rem; }
 
 .dashboard-header {
-  background-color: #444; }
+  background-color: #444;
+  margin-left: 15%; }
   .dashboard-header h1 {
     color: #efefef;
     margin-top: 0;
@@ -420,6 +423,11 @@ footer {
   .login-right a {
     text-decoration: none;
     color: #3b7d8e; }
+
+.dashboard-main {
+  margin-left: 15%; }
+  .dashboard-main #chart {
+    padding: 1rem; }
 
 * {
   box-sizing: border-box; }

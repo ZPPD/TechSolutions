@@ -16,9 +16,9 @@ function submitForm(message, className) {
   const div = document.createElement("div");
   div.className = `alert ${className}`;
   div.appendChild(document.createTextNode(message));
-  const contactForm = document.querySelector(".contact-form");
   const form = document.querySelector(".form");
-  contactForm.insertBefore(div, form);
+  const submitBtn = document.querySelector(".submit-btn");
+  form.insertBefore(div, submitBtn);
 
   setTimeout(function() {
     document.querySelector(".alert").remove();

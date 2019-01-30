@@ -1,7 +1,12 @@
 .dashboard-main {
   margin-left: 15%;
 
-  #chart {
+  .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .synced-charts,
+  #bar-chart {
     padding: 1rem;
   }
 }

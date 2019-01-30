@@ -426,7 +426,11 @@ footer {
 
 .dashboard-main {
   margin-left: 15%; }
-  .dashboard-main #chart {
+  .dashboard-main .chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .dashboard-main .synced-charts,
+  .dashboard-main #bar-chart {
     padding: 1rem; }
 
 * {

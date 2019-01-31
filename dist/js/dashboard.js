@@ -1,4 +1,32 @@
-// import { domainToUnicode } from "url";
+/*====== Add Page Modal ========= */
+const closeBtn = document.querySelector(".closeBtn");
+const closeModal = document.querySelector(".closeModal");
+const modal = document.querySelector("#page-modal");
+const modalbtn = document.querySelector(".add-page");
+
+// open modal
+modalbtn.addEventListener("click", function(e) {
+  modal.style.display = "block";
+  e.preventDefault();
+});
+
+// close modal
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+closeModal.addEventListener("click", function(e) {
+  modal.style.display = "none";
+  e.preventDefault();
+});
+
+// close by clicking outside the box,
+// modal is the grey area outside the box
+window.addEventListener("click", function(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+});
 
 /*===== Bar Chart ======*/
 // chart options

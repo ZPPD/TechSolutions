@@ -14,3 +14,32 @@
     padding: 1rem;
   }
 }
+
+.page-modal {
+  .page-content {
+    width: 55%;
+    background-color: darken($primary-color, 3);
+  }
+  .page-form {
+    margin: 1rem;
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 0.4rem 0.8rem;
+
+      font-size: 1rem;
+      line-height: 1.5;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid $primary-color;
+    }
+  }
+  .btn {
+    margin: 1rem;
+    text-align: center;
+  }
+  .checkbox {
+    text-align: center;
+  }
+}

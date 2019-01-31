@@ -124,10 +124,18 @@
   h1 {
     color: $light-text-color;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 1rem;
     text-align: left;
+    display: inline-block;
   }
   i {
     font-size: 2rem;
+  }
+
+  .add-page {
+    float: right;
+    margin: 1rem;
+    padding: 0.8rem;
   }
 }

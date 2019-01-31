@@ -1,11 +1,13 @@
+// import { domainToUnicode } from "url";
+
 /*===== Bar Chart ======*/
 // chart options
-const options = {
+const optionsBar = {
   chart: {
-    height: 300,
+    height: 350,
     // width: "500px",
     type: "bar",
-    background: "#f4f4f4",
+    background: "#f7f7f7",
     foreColor: "#333"
   },
   colors: ["#4caf50"],
@@ -70,7 +72,7 @@ const options = {
   }
 };
 // init chart
-const chart = new ApexCharts(document.querySelector("#bar-chart"), options);
+const chart = new ApexCharts(document.querySelector("#bar-chart"), optionsBar);
 
 // render chart
 chart.render();
@@ -80,7 +82,7 @@ Apex = {
   chart: {
     height: 180,
     // width: "500px",
-    background: "#f4f4f4",
+    background: "#f7f7f7",
     foreColor: "#333"
   },
   dataLabels: {
@@ -235,3 +237,54 @@ function generateDayWiseTimeSeries(baseval, count, yrange) {
   }
   return series;
 }
+
+/*========= Donut Chart ========= */
+// chart options
+var optionsDonut = {
+  chart: {
+    type: "donut",
+    height: 350,
+    background: "#f7f7f7",
+    foreColor: "#333"
+  },
+  series: [20, 35, 41, 17, 40],
+  labels: [
+    "IT Service & support",
+    "Web & Custom Development",
+    "Hosted & Managed Services",
+    "Cloud Storage",
+    "Network & IT Infrastructure "
+  ],
+  dataLabels: {
+    enabled: true,
+    formatter: function(val) {
+      return Math.floor(val) + "%";
+    }
+  },
+  // title: {
+  //   text: "Monthly Department Sales",
+  //   align: "left"
+  // },
+  responsive: [
+    {
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 200
+        },
+        legend: {
+          position: "bottom"
+        }
+      }
+    }
+  ]
+};
+
+//  init chart
+const donut = new ApexCharts(
+  document.querySelector("#donut-chart"),
+  optionsDonut
+);
+
+// render chart
+donut.render();

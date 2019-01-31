@@ -99,10 +99,16 @@
   .dashboard-header h1 {
     color: #efefef;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 1rem;
-    text-align: left; }
+    text-align: left;
+    display: inline-block; }
   .dashboard-header i {
     font-size: 2rem; }
+  .dashboard-header .add-page {
+    float: right;
+    margin: 1rem;
+    padding: 0.8rem; }
 
 footer {
   clear: both;
@@ -429,6 +435,9 @@ footer {
   .dashboard-main .synced-chart-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
+  .dashboard-main .bar-chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
   .dashboard-main .charts {
     padding: 1rem; }
 

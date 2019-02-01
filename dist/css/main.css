@@ -470,6 +470,37 @@ footer {
 .page-modal .checkbox {
   text-align: center; }
 
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem; }
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #cfcfcf;
+  letter-spacing: 1px;
+  font-size: 1.1rem; }
+  .customers-table caption {
+    background-color: #dadada;
+    padding: 0.5rem;
+    font-weight: 600;
+    background-color: #662e9b;
+    color: #efefef; }
+  .customers-table td,
+  .customers-table th {
+    border-top: 1px solid #d5d5d5;
+    padding: 1rem;
+    text-align: left; }
+  .customers-table tr:nth-child(even) {
+    background-color: #dadada; }
+  .customers-table th[scope="col"] {
+    padding: 0.7rem; }
+
+.dashboard-footer {
+  margin-left: 15%;
+  margin-top: 5rem; }
+
 * {
   box-sizing: border-box; }
 

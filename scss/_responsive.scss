@@ -1,0 +1,103 @@
+// wide screens
+@include mediaXL {
+}
+
+// desctops and laptops
+@include mediaLg {
+  // dashboard page
+  .dashboard-nav {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+
+    .dashboard-menu {
+      li {
+        display: inline;
+      }
+    }
+    .brand {
+      padding: 0.5rem;
+    }
+    .dashboard-menu {
+      margin: 0;
+      li {
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+    .synced-chart-grid,
+    .bar-chart-grid,
+    .table-grid {
+      grid-template-columns: 1fr;
+    }
+    .charts {
+      padding: 1rem 0;
+    }
+  }
+  .world-map {
+    height: 100vh;
+  }
+  .dashboard-header {
+    margin-left: 0;
+  }
+
+  .dashboard-footer {
+    margin-left: 0;
+  }
+  .page-modal {
+    .page-content {
+      width: 90%;
+    }
+    .page-form {
+      margin: 0.1rem;
+    }
+  }
+  .dashboard-header {
+    h1 {
+      font-size: 1.2rem;
+    }
+    i {
+      font-size: 1.2rem;
+    }
+    .add-page {
+      padding: 0.4rem;
+    }
+  }
+}
+
+// tablets and small laptops
+@include mediaMd {
+  // footer
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    .zppd {
+      margin-top: auto;
+    }
+  }
+}
+
+// smart phones
+@include mediaSm {
+  // dashboard page
+  .table-map {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .customers-table {
+    font-size: 1rem;
+
+    td,
+    th {
+      padding: 0.2rem;
+    }
+    th[scope="col"] {
+      padding: 0.4rem;
+    }
+  }
+}

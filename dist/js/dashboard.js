@@ -155,7 +155,25 @@ Apex = {
   },
   xaxis: {
     type: "datetime"
-  }
+  },
+  responsive: [
+    {
+      breakpoint: 350,
+      options: {
+        chart: {
+          width: 310
+        }
+      }
+    },
+    {
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 350
+        }
+      }
+    }
+  ]
 };
 
 var optionsLine1 = {
@@ -295,10 +313,10 @@ var optionsDonut = {
   // },
   responsive: [
     {
-      breakpoint: 480,
+      breakpoint: 580,
       options: {
         chart: {
-          width: 200
+          width: 300
         },
         legend: {
           position: "bottom"

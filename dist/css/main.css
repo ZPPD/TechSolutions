@@ -112,6 +112,27 @@
     .dashboard-header .add-page i {
       font-size: 1rem; }
 
+.menu-btn {
+  top: 35px;
+  right: 35px;
+  position: fixed;
+  cursor: pointer;
+  transition: all 0.1s ease; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #444;
+    transition: all 0.1s ease; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
 footer {
   clear: both;
   background: #444;

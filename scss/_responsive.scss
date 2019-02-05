@@ -1,9 +1,9 @@
-// wide screens
-@include mediaXL {
+// =========== wide screens
+@include mediaXXL {
 }
 
-// desctops and laptops
-@include mediaLg {
+// ============ desctops
+@include mediaXLg {
   // dashboard page
   .dashboard-nav {
     position: static;
@@ -71,10 +71,62 @@
   }
 }
 
-// tablets and small laptops
+// ========= laptops
+@include mediaLg {
+  i {
+    font-size: 3rem;
+  }
+
+  // main page
+  .bottom {
+    article,
+    aside {
+      float: none;
+      width: 100%;
+    }
+
+    aside {
+      img {
+        height: 50vh;
+      }
+    }
+  }
+}
+
+// =========== tablets and small laptops
 @include mediaMd {
+  .container {
+    max-width: 90vw;
+  }
+  h1,
+  h2 {
+    font-size: 1.8rem;
+  }
   .hero {
     margin-top: 5rem;
+  }
+  .hero-text {
+    font-size: 2.5rem;
+  }
+  // main page
+  .logo {
+    i {
+      font-size: 2.5rem;
+      padding: 0 1rem;
+    }
+  }
+  .image-grid {
+    .block-img3 {
+      height: 40vh;
+    }
+  }
+
+  .wrap {
+    p {
+      font-weight: 400;
+      font-size: 0.8rem;
+      padding-top: 0.3rem;
+    }
   }
   // menu overlay
   .menu-btn {
@@ -85,6 +137,7 @@
     top: 0;
     right: 0;
     padding: 0;
+    margin: 0;
     width: 100%;
     opacity: 0.93;
     visibility: hidden;
@@ -131,7 +184,7 @@
   }
 }
 
-// smart phones
+// ============ smart phones
 @include mediaSm {
   // dashboard page
   .table-map {

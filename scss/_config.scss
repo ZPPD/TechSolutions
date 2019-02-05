@@ -32,7 +32,7 @@ $show-hero-image: true;
 // Media Query Mixins
 
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 580px) {
     @content;
   }
 }
@@ -44,12 +44,18 @@ $show-hero-image: true;
 }
 
 @mixin mediaLg {
+  @media screen and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXLg {
   @media screen and (max-width: 1330px) {
     @content;
   }
 }
 
-@mixin mediaXL {
+@mixin mediaXXL {
   @media screen and (min-width: 1330px) {
     @content;
   }

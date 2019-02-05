@@ -7,7 +7,6 @@
 @import "contact";
 @import "login";
 @import "dashboard";
-@import "responsive";
 
 * {
   box-sizing: border-box;
@@ -182,3 +181,4 @@ hr {
     }
   }
 }
+@import "responsive";

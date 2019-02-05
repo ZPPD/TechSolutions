@@ -23,40 +23,41 @@
   }
 }
 .menu {
-  display: flex;
-  flex-flow: row wrap;
-  // justify-content: flex-start;
   margin-left: auto;
+  &-nav {
+    display: flex;
+    flex-flow: row wrap;
 
-  & li {
-    list-style: none;
-    margin: 0 1rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-
-  .menu-item {
-    text-decoration: none;
-    color: $dark-color;
-
-    &:hover {
-      color: lighten($dark-color, 5);
-      border-bottom: 3px solid $dark-color;
-      @include ease;
+    & li {
+      list-style: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
-  }
-  .active-menu {
-    background: $brand-color;
-    padding: 0.4rem;
-    border-radius: 3px;
 
-    &:hover {
-      background: darken($brand-color, 10);
-      @include ease-in-out;
-    }
-    a {
+    .menu-item {
       text-decoration: none;
-      color: $light-text-color;
+      color: $dark-color;
+
+      &:hover {
+        color: lighten($dark-color, 5);
+        border-bottom: 3px solid $dark-color;
+        @include ease;
+      }
+    }
+    .active-menu {
+      background: $brand-color;
+      padding: 0.4rem;
+      border-radius: 3px;
+
+      &:hover {
+        background: darken($brand-color, 10);
+        @include ease-in-out;
+      }
+      a {
+        text-decoration: none;
+        color: $light-text-color;
+      }
     }
   }
 }
@@ -145,18 +146,22 @@
 
 // responsive menu button
 .menu-btn {
+  display: none;
   top: 35px;
   right: 35px;
   position: fixed;
   cursor: pointer;
-  @include ease;
+  @include easeOut;
 
   .btn-line {
-    width: 28px;
+    width: 30px;
     height: 3px;
     margin: 0 0 5px 0;
     background: $dark-color;
-    @include ease;
+    @include easeOut;
+    &:nth-child(2) {
+      width: 25px;
+    }
   }
 
   // rotate into X with menu Lines

@@ -262,7 +262,7 @@ footer {
     margin: 2rem 0 4rem 0; }
     .solutions .card img {
       width: 75%;
-      height: 50vh; }
+      height: auto; }
 
 #hero-news {
   background: url("../img/news.jpeg");
@@ -725,7 +725,9 @@ hr {
       padding: 1.5rem;
       text-align: left; }
     .grid-services .on-call-text {
-      grid-column: 1; } }
+      grid-column: 1; }
+  .box {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 850px) {
   .container {
@@ -746,6 +748,8 @@ hr {
     font-weight: 400;
     font-size: 0.8rem;
     padding-top: 0.3rem; }
+  .solutions {
+    grid-template-columns: 1fr; }
   .menu-btn {
     display: block; }
   .menu {
@@ -785,6 +789,12 @@ hr {
       margin: 0 auto; } }
 
 @media screen and (max-width: 580px) {
+  .box .box-right i {
+    font-size: 2rem; }
+  .special:before, .special:after {
+    top: 1rem; }
+  .special i {
+    font-size: 2.5rem; }
   .table-map {
     width: 100%;
     padding: 1rem 0; }

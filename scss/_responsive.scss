@@ -103,6 +103,11 @@
       grid-column: 1;
     }
   }
+
+  // solutions page
+  .box {
+    grid-template-columns: 1fr;
+  }
 }
 
 // =========== tablets and small laptops
@@ -139,6 +144,10 @@
       font-size: 0.8rem;
       padding-top: 0.3rem;
     }
+  }
+  // solutions page
+  .solutions {
+    grid-template-columns: 1fr;
   }
   // menu overlay
   .menu-btn {
@@ -198,6 +207,23 @@
 
 // ============ smart phones
 @include mediaSm {
+  // solutions page
+  .box {
+    .box-right {
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+  .special {
+    &:before,
+    &:after {
+      top: 1rem;
+    }
+    i {
+      font-size: 2.5rem;
+    }
+  }
   // dashboard page
   .table-map {
     width: 100%;

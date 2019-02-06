@@ -718,7 +718,14 @@ hr {
     float: none;
     width: 100%; }
   .bottom aside img {
-    height: 50vh; } }
+    height: 50vh; }
+  .grid-services {
+    grid-template-columns: 1fr; }
+    .grid-services .services-text {
+      padding: 1.5rem;
+      text-align: left; }
+    .grid-services .on-call-text {
+      grid-column: 1; } }
 
 @media screen and (max-width: 850px) {
   .container {

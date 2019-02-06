@@ -91,6 +91,18 @@
       }
     }
   }
+
+  // services page
+  .grid-services {
+    grid-template-columns: 1fr;
+    .services-text {
+      padding: 1.5rem;
+      text-align: left;
+    }
+    .on-call-text {
+      grid-column: 1;
+    }
+  }
 }
 
 // =========== tablets and small laptops

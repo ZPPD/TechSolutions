@@ -4,6 +4,14 @@
 
 // ============ desctops
 @include mediaXLg {
+  // news page
+  #newsBox {
+    .articlerow {
+      .article {
+        width: 85%;
+      }
+    }
+  }
   // dashboard page
   .dashboard-nav {
     position: static;
@@ -128,7 +136,7 @@
     font-size: 1.8rem;
   }
   .hero {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
   }
   .hero-text {
     font-size: 2.5rem;
@@ -163,7 +171,32 @@
     margin: 10%;
     text-align: left;
   }
+
+  // news page
+  #newsBox {
+    .articlerow {
+      .article {
+        width: 95%;
+
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .news-sites {
+    .btns {
+      font-size: 1.2rem;
+      width: 150px;
+    }
+  }
   // menu overlay
+  .navbar {
+    .brand {
+      font-size: 1.7rem;
+    }
+  }
   .menu-btn {
     display: block;
   }
@@ -238,6 +271,15 @@
       font-size: 2.5rem;
     }
   }
+
+  // news page
+  .news-sites {
+    .btns {
+      font-size: 0.8rem;
+      width: 100px;
+    }
+  }
+
   // dashboard page
   .table-map {
     width: 100%;

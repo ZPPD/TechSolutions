@@ -670,6 +670,8 @@ hr {
       color: #346d7c; }
 
 @media screen and (max-width: 1330px) {
+  #newsBox .articlerow .article {
+    width: 85%; }
   .dashboard-nav {
     position: static;
     width: 100%;
@@ -740,7 +742,7 @@ hr {
   h2 {
     font-size: 1.8rem; }
   .hero {
-    margin-top: 5rem; }
+    margin-top: 4.5rem; }
   .hero-text {
     font-size: 2.5rem; }
   .logo i {
@@ -757,6 +759,15 @@ hr {
   .modal-content {
     margin: 10%;
     text-align: left; }
+  #newsBox .articlerow .article {
+    width: 95%; }
+    #newsBox .articlerow .article h2 {
+      font-size: 1.5rem; }
+  .news-sites .btns {
+    font-size: 1.2rem;
+    width: 150px; }
+  .navbar .brand {
+    font-size: 1.7rem; }
   .menu-btn {
     display: block; }
   .menu {
@@ -802,6 +813,9 @@ hr {
     top: 1rem; }
   .special i {
     font-size: 2.5rem; }
+  .news-sites .btns {
+    font-size: 0.8rem;
+    width: 100px; }
   .table-map {
     width: 100%;
     padding: 1rem 0; }

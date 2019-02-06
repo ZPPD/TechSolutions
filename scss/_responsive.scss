@@ -108,6 +108,14 @@
   .box {
     grid-template-columns: 1fr;
   }
+  // contact page
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
 }
 
 // =========== tablets and small laptops
@@ -148,6 +156,12 @@
   // solutions page
   .solutions {
     grid-template-columns: 1fr;
+  }
+
+  // contact page
+  .modal-content {
+    margin: 10%;
+    text-align: left;
   }
   // menu overlay
   .menu-btn {

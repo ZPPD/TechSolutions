@@ -727,7 +727,11 @@ hr {
     .grid-services .on-call-text {
       grid-column: 1; }
   .box {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .contact-grid {
+    grid-template-columns: 1fr; }
+  .modal-content {
+    width: 80%; } }
 
 @media screen and (max-width: 850px) {
   .container {
@@ -750,6 +754,9 @@ hr {
     padding-top: 0.3rem; }
   .solutions {
     grid-template-columns: 1fr; }
+  .modal-content {
+    margin: 10%;
+    text-align: left; }
   .menu-btn {
     display: block; }
   .menu {

@@ -168,7 +168,6 @@
 
   // contact page
   .modal-content {
-    margin: 10%;
     text-align: left;
   }
 
@@ -191,6 +190,19 @@
       width: 150px;
     }
   }
+
+  // login page
+  .login-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-top: 4.5rem;
+
+    .login-left div,
+    .login-right div {
+      margin: 10% auto;
+    }
+  }
+
   // menu overlay
   .navbar {
     .brand {
@@ -247,7 +259,8 @@
       padding: 0;
     }
     .zppd {
-      margin: 0 auto;
+      margin: 75% auto 0 auto;
+      text-align: right;
     }
   }
 }

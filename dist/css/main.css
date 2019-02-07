@@ -433,6 +433,9 @@ footer {
 .login-left span {
   color: #3b7d8e; }
 
+.login-left .dash {
+  color: #c6ab0f; }
+
 .login-left i {
   font-size: 1.1rem; }
 
@@ -757,7 +760,6 @@ hr {
   .solutions {
     grid-template-columns: 1fr; }
   .modal-content {
-    margin: 10%;
     text-align: left; }
   #newsBox .articlerow .article {
     width: 95%; }
@@ -766,6 +768,13 @@ hr {
   .news-sites .btns {
     font-size: 1.2rem;
     width: 150px; }
+  .login-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-top: 4.5rem; }
+    .login-grid .login-left div,
+    .login-grid .login-right div {
+      margin: 10% auto; }
   .navbar .brand {
     font-size: 1.7rem; }
   .menu-btn {
@@ -804,7 +813,8 @@ hr {
     footer ul {
       padding: 0; }
     footer .zppd {
-      margin: 0 auto; } }
+      margin: 75% auto 0 auto;
+      text-align: right; } }
 
 @media screen and (max-width: 580px) {
   .box .box-right i {

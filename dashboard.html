@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel='stylesheet' href='css/main.css'></link>
+  <script src="https://cdn.ckeditor.com/4.11.2/standard/ckeditor.js"></script>
+  <title>Tech Solutions | Company Dashboard</title>
+</head>
+<body>
+  
+  <nav class='dashboard-nav'>
+    <a href="#" class="brand"><span>Tech</span> Solutions</a>
+    <ul class='dashboard-menu'>
+      <li><a class='menu-item' href='#'>Dashboard</a></li>
+      <li><a class='menu-item' href='#'>Tasks</a></li>
+      <li><a class='menu-item' href='#'>Messages</a></li>
+      <li><a class='menu-item' href='#'>Users</a></li>        
+      
+    <!-- </ul>
+    <ul class='menu-right'> -->
+      <li><strong><a href='login.html' class='logout-btn' href='login.html'>Logout</a></strong></li>
+    </ul>
+  </nav>
+  <header class='dashboard-header'>
+    <h1><i class="fas fa-cogs"></i> Dashboard <small>Overview</small></h1>
+    <button class="add-page btn"><i class="far fa-file-alt"></i> Add Page</button>
+    <div id="page-modal" class="page-modal">
+      <div class="modal-content page-content">
+        <form>
+          <span class="closeBtn">&times;</span>
+        <h4>Add Page </h4>
+        <hr>
+        <div class="page-form">
+          <label for="title">Page Title</label><br>
+          <input type="text" id="title" placeholder='Page Title'>
+        </div>
+        <div class="page-form">
+            <label for="body">Page Body</label><br>
+            <textarea type="text" id="body" name='editor1' placeholder='Page Body'></textarea>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="Checkbox"> Published
+          </label>
+        </div>
+        <div class="page-form">
+            <label for="tags">Meta Tags</label><br>
+            <input type="text" id="tags" placeholder='Add Tags...'>
+        </div>
+        <div class="page-form">
+          <label for="description">Meta description</label><br>
+          <input type="text" id="tags" placeholder='Add Meta Description...'>
+        </div>
+        <button class='closeModal btn'>Save Page</button>
+        </form>    
+      </div>
+      
+    </div>
+  </header>
+
+  <main class='dashboard-main'>
+    <div class="synced-chart-grid">
+      <div class='charts'><div id="chart-line"></div></div>
+      <div class='charts'><div id="chart-line2"></div></div>
+      <div class='charts'><div id="chart-area"></div></div> 
+    </div>
+
+    <div class="bar-chart-grid">
+      <div class='charts'><div id="bar-chart" ></div></div>
+      <div class='charts'><div id="donut-chart" ></div></div>
+    </div>
+    
+    <div class="table-grid">
+      <div class='table-map'>
+        <table class='customers-table'>
+          <thead>
+            <caption>Latest Customers</caption>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Company</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>John Doe</th>
+              <td>doe@mail.com</td>
+              <td>ABC Company</td>
+            </tr>
+            <tr>
+              <th>Leanne Graham </th>
+              <td>leanne@mail.us</td>
+              <td>CatCo</td>
+            </tr>
+            <tr>
+              <th>Nicholas Runolfsdottir</th>
+              <td>nick@mail.uk</td>
+              <td>Webworks</td>
+            </tr>
+            <tr>
+              <th>Ervin Howell</th>
+              <td>ervin@mail.com</td>
+              <td>Workshop 123</td>
+            </tr>
+            <tr>
+              <th>Kurtis Weissnat</th>
+              <td>kurtis@mail.com</td>
+              <td>Bots Inc</td>
+            </tr>
+            <tr>
+              <th>Steve Dietrich</th>
+              <td>steve@mail.co</td>
+              <td>Taco Shell</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class='table-map'>
+        <div class='world-map'>
+          <!-- <img src="img/World-Map.png" alt="Map of Clients Locations"> -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class='dashboard-footer'>
+    <section class='footer-section'>
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Polices</li>
+        <li>Privacy</li>
+      </ul>
+    </section>
+
+    <section class='footer-section'>
+      <ul>
+        <li>Webinars</li>
+        <li>Site Index</li>
+        <li>Contact</li>
+        <li>Blog</li>
+      </ul>
+    </section>
+
+    <section class='contact'>
+      <h3><span>Tech</span> Solutions</h3>
+      <p>51 Main St. <br>
+        Cary, NC 27513 <br>
+        (555) 555-5555</p>
+      <p class='social'>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-linkedin fa-2x"></i>
+        <i class="fab fa-twitter-square fa-2x"></i>
+        <i class="fab fa-google-plus-square fa-2x"></i>
+      </p>
+    </section>
+    <p class='zppd'>Powered by: <a href='https://zppd.github.io' target='_blank'>ZPPD</a> &copy; 2019 </p>
+  </footer>
+
+  <script>
+    CKEDITOR.replace( 'editor1' );
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

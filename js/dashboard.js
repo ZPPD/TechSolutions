@@ -158,7 +158,7 @@ Apex = {
   },
   responsive: [
     {
-      breakpoint: 350,
+      breakpoint: 360,
       options: {
         chart: {
           width: 310
@@ -169,7 +169,7 @@ Apex = {
       breakpoint: 480,
       options: {
         chart: {
-          width: 400
+          width: 350
         }
       }
     }

@@ -169,7 +169,7 @@ Apex = {
       breakpoint: 480,
       options: {
         chart: {
-          width: 350
+          width: 400
         }
       }
     }

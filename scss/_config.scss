@@ -7,7 +7,17 @@ $dark-color: #444;
 $light-text-color: #efefef;
 $brand-color: #3b7d8e;
 $button-color: #eece1a;
-$show-hero-image: true;
+// $show-hero-image: true;
+
+// function for set text color, $color is background color
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $dark-color;
+  } @else {
+    @return $light-text-color;
+  }
+}
 
 // mixins
 @mixin ease {
